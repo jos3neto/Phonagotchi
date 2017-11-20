@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8205406D1F019E75004D363E /* Food.m in Sources */ = {isa = PBXBuildFile; fileRef = 8205406C1F019E75004D363E /* Food.m */; };
 		82C055F11EFAB57F00180996 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C055F01EFAB57F00180996 /* main.m */; };
 		82C055F41EFAB57F00180996 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C055F31EFAB57F00180996 /* AppDelegate.m */; };
 		82C055F71EFAB57F00180996 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C055F61EFAB57F00180996 /* ViewController.m */; };
 		82C055FA1EFAB57F00180996 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82C055F81EFAB57F00180996 /* Main.storyboard */; };
 		82C055FC1EFAB57F00180996 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82C055FB1EFAB57F00180996 /* Assets.xcassets */; };
 		82C055FF1EFAB57F00180996 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82C055FD1EFAB57F00180996 /* LaunchScreen.storyboard */; };
+		82C056081EFACCAD00180996 /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C056071EFACCAD00180996 /* Cat.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8205406B1F019E75004D363E /* Food.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Food.h; sourceTree = "<group>"; };
+		8205406C1F019E75004D363E /* Food.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Food.m; sourceTree = "<group>"; };
 		82C055EC1EFAB57F00180996 /* Phonagotchi Rev1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Phonagotchi Rev1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		82C055F01EFAB57F00180996 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		82C055F21EFAB57F00180996 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +30,8 @@
 		82C055FB1EFAB57F00180996 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82C055FE1EFAB57F00180996 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82C056001EFAB57F00180996 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82C056061EFACCAD00180996 /* Cat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cat.h; sourceTree = "<group>"; };
+		82C056071EFACCAD00180996 /* Cat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cat.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,10 @@
 				82C055F31EFAB57F00180996 /* AppDelegate.m */,
 				82C055F51EFAB57F00180996 /* ViewController.h */,
 				82C055F61EFAB57F00180996 /* ViewController.m */,
+				82C056061EFACCAD00180996 /* Cat.h */,
+				82C056071EFACCAD00180996 /* Cat.m */,
+				8205406B1F019E75004D363E /* Food.h */,
+				8205406C1F019E75004D363E /* Food.m */,
 				82C055F81EFAB57F00180996 /* Main.storyboard */,
 				82C055FB1EFAB57F00180996 /* Assets.xcassets */,
 				82C055FD1EFAB57F00180996 /* LaunchScreen.storyboard */,
@@ -151,6 +161,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8205406D1F019E75004D363E /* Food.m in Sources */,
+				82C056081EFACCAD00180996 /* Cat.m in Sources */,
 				82C055F71EFAB57F00180996 /* ViewController.m in Sources */,
 				82C055F41EFAB57F00180996 /* AppDelegate.m in Sources */,
 				82C055F11EFAB57F00180996 /* main.m in Sources */,
@@ -312,6 +324,7 @@
 				82C056051EFAB57F00180996 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

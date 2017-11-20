@@ -1,26 +1,122 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17B48" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="bvY-Uv-ODr">
+                                <rect key="frame" x="20" y="20" width="280" height="280"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" id="3Z0-Kv-4si"/>
+                                    <constraint firstAttribute="width" constant="280" id="KXK-Cm-3AW"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="VeT-K8-FHA" appends="YES" id="axk-qJ-qxE"/>
+                                </connections>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="basket" translatesAutoresizingMaskIntoConstraints="NO" id="YK8-RZ-Bir">
+                                <rect key="frame" x="41" y="440" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="F9s-F1-iQi"/>
+                                    <constraint firstAttribute="width" constant="120" id="UZg-qK-lTZ"/>
+                                </constraints>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="strawberry" translatesAutoresizingMaskIntoConstraints="NO" id="hog-g0-k66">
+                                <rect key="frame" x="12" y="431" width="70" height="70"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="YiF-VQ-RCf"/>
+                                    <constraint firstAttribute="width" constant="70" id="uwj-pm-FnN"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="1zA-UV-s7C" appends="YES" id="q8a-Sm-obe"/>
+                                    <outletCollection property="gestureRecognizers" destination="ESR-yd-sJN" appends="YES" id="6eW-Rp-Yr7"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sausage" translatesAutoresizingMaskIntoConstraints="NO" id="a8r-G1-PAp" userLabel="Right Food Image">
+                                <rect key="frame" x="110" y="431" width="70" height="70"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="FAO-rh-uKC"/>
+                                    <constraint firstAttribute="width" constant="70" id="XT9-ka-VHQ"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="rPx-Oy-2cv" appends="YES" id="X73-fj-0dC"/>
+                                    <outletCollection property="gestureRecognizers" destination="3Zh-b0-TTD" appends="YES" id="09o-g3-ybK"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YK8-RZ-Bir" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="11V-Ni-v6i"/>
+                            <constraint firstItem="bvY-Uv-ODr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2EB-0t-mY2"/>
+                            <constraint firstItem="hog-g0-k66" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="12" id="A4i-Nq-YrH"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hog-g0-k66" secondAttribute="bottom" constant="67" id="AsX-mI-kAS"/>
+                            <constraint firstItem="a8r-G1-PAp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="110" id="Jje-Nj-pdh"/>
+                            <constraint firstItem="bvY-Uv-ODr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="dAu-OK-GM2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YK8-RZ-Bir" secondAttribute="bottom" constant="8" id="rDZ-0h-4BH"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="a8r-G1-PAp" secondAttribute="bottom" constant="67" id="rxL-R1-TVB"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="catImage" destination="bvY-Uv-ODr" id="7kd-ft-s8k"/>
+                        <outlet property="leftFoodImage" destination="hog-g0-k66" id="PAZ-kZ-Soj"/>
+                        <outlet property="rightFoodImage" destination="a8r-G1-PAp" id="Vbp-IO-9bk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="VeT-K8-FHA">
+                    <connections>
+                        <action selector="petCat:" destination="BYZ-38-t0r" id="x7y-bv-E7T"/>
+                    </connections>
+                </panGestureRecognizer>
+                <tapGestureRecognizer id="1zA-UV-s7C">
+                    <connections>
+                        <action selector="setLeftFoodItem:" destination="BYZ-38-t0r" id="8TG-rU-yzh"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="rPx-Oy-2cv">
+                    <connections>
+                        <action selector="setRightFoodItem:" destination="BYZ-38-t0r" id="v5j-2p-cFf"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="ESR-yd-sJN">
+                    <connections>
+                        <action selector="leftFoodItemDragHandler:" destination="BYZ-38-t0r" id="CDV-SN-mZj"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="3Zh-b0-TTD">
+                    <connections>
+                        <action selector="rightFoodItemDragHandler:" destination="BYZ-38-t0r" id="Nrl-j6-HDl"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="-317" y="-83"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="basket" width="136" height="148"/>
+        <image name="default" width="151" height="88"/>
+        <image name="sausage" width="400" height="366"/>
+        <image name="strawberry" width="206" height="240"/>
+    </resources>
 </document>
